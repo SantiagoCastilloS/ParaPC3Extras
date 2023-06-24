@@ -1,0 +1,79 @@
+codigos de git importantes
+ChatGPT
+A continuación, te proporciono una lista de comandos de Git que son comúnmente utilizados y considerados importantes en el flujo de trabajo de Git:
+
+git init: Inicializa un nuevo repositorio Git en un directorio.
+git clone [url]: Clona un repositorio remoto existente en tu máquina local.
+git add [archivo]: Agrega un archivo específico al área de preparación (staging area).
+git add .: Agrega todos los archivos modificados y nuevos al área de preparación.
+git commit -m "mensaje": Crea un nuevo commit con los cambios en el área de preparación y asigna un mensaje descriptivo.
+git status: Muestra el estado actual del repositorio, incluyendo los archivos modificados, agregados o eliminados.
+git push: Envía los commits locales al repositorio remoto.
+git pull: Obtiene los cambios más recientes desde el repositorio remoto y los fusiona con tu rama actual.
+git branch: Muestra una lista de ramas en el repositorio y resalta la rama actual.
+git checkout [rama]: Cambia a la rama especificada.
+git merge [rama]: Fusiona la rama especificada con la rama actual.
+git remote add [nombre] [url]: Agrega un repositorio remoto con el nombre especificado y la URL correspondiente.
+git log: Muestra el historial de commits en la rama actual.
+git diff [archivo]: Muestra las diferencias entre el archivo actual y la última versión confirmada.
+git reset [archivo]: Retira el archivo especificado del área de preparación, pero conserva los cambios locales.
+git stash: Guarda los cambios locales en una pila temporal para poder cambiar de rama sin realizar un commit.
+git tag [nombre]: Crea una etiqueta con el nombre especificado en el commit actual.
+Estos son solo algunos de los comandos más utilizados en Git. Git ofrece muchas más funcionalidades y opciones. Puedes obtener más información sobre los comandos de Git y su uso ejecutando git --help en tu terminal o visitando la documentación oficial de Git.
+
+
+User:
+git para poner nombre de usuario y email
+ChatGPT:
+Para configurar tu nombre de usuario y dirección de correo electrónico en Git, puedes utilizar los siguientes comandos:
+
+Configurar el nombre de usuario:
+
+arduino
+Copy code
+git config --global user.name "Tu Nombre"
+Configurar la dirección de correo electrónico:
+
+arduino
+Copy code
+git config --global user.email "tucorreo@example.com"
+Asegúrate de reemplazar "Tu Nombre" con tu nombre real y "tucorreo@example.com" con tu dirección de correo electrónico. El uso del parámetro --global configura estos valores a nivel global, lo que significa que se aplicarán a todos los repositorios de Git en tu máquina.
+
+Puedes verificar la configuración de tu nombre de usuario y correo electrónico ejecutando los siguientes comandos:
+
+arduino
+Copy code
+git config user.name
+git config user.email
+Esto mostrará los valores que has configurado.
+
+Es importante tener en cuenta que el nombre de usuario y la dirección de correo electrónico se utilizan en los commits de Git para identificar al autor de los cambios. Asegúrate de utilizar la información correcta para que tus contribuciones a los repositorios se atribuyan correctamente.
+
+
+
+
+
+User
+como cambiar la contraseña de un acceso a mariadb sql
+ChatGPT
+Para cambiar la contraseña de un usuario de acceso a MariaDB SQL, puedes seguir estos pasos:
+
+Inicia sesión en tu servidor o entorno donde está instalado MariaDB SQL.
+
+Abre una terminal o un cliente de línea de comandos y ejecuta el siguiente comando para acceder a la interfaz de MariaDB SQL:
+
+css
+Copy code
+mysql -u nombre_usuario -p
+Reemplaza "nombre_usuario" con el nombre del usuario para el cual deseas cambiar la contraseña. Al presionar Enter, se te solicitará ingresar la contraseña actual del usuario.
+
+Una vez que hayas iniciado sesión en MariaDB, utiliza el siguiente comando para cambiar la contraseña del usuario:
+
+sql
+Copy code
+ALTER USER nombre_usuario IDENTIFIED BY 'nueva_contraseña';
+Reemplaza "nombre_usuario" con el nombre del usuario y "nueva_contraseña" con la nueva contraseña que deseas establecer. Ten en cuenta que las comillas simples alrededor de la contraseña son necesarias.
+
+Después de ejecutar el comando, MariaDB SQL cambiará la contraseña del usuario especificado.
+
+Recuerda que para realizar estos pasos, debes tener los privilegios necesarios para modificar usuarios en MariaDB SQL. Si no tienes los privilegios adecuados, es posible que debas contactar al administrador del sistema o a alguien con los permisos necesarios para realizar el cambio de contraseña.
